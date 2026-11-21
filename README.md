@@ -94,7 +94,7 @@ cljs に置くのは ADR-2606290000 の判断）。
 - **`/healthz` `/readyz` `/_app/meta`。** `src/app.ts` にあるが deploy されておらず実測 404。
   生やすと移行ではなくなるので 404 のままにした（unit test と smoke の両方で固定）。
 
-## いま在るもの — 18 ファイル
+## いま在るもの — 19 ファイル
 
 | 面 | ファイル |
 |---|---|
@@ -105,7 +105,7 @@ cljs に置くのは ADR-2606290000 の判断）。
 | Worker 設定 | `appview/…/wrangler.jsonc` |
 | actor 記述子 | `appview/…/kotodama.jsonld` |
 | 設計 | `AGENTS.md` |
-| 由来・権利・識別 | `NOTICE` / `README.edn` / `migration.edn` |
+| 由来・権利・識別 | `NOTICE` / `README.edn` / `migration.edn` / `blueprint.edn` |
 | 文書 | `README.md` / `docs/operator-quickstart.md` / `docs/adr/0001-*.edn` |
 
 **production の TypeScript は 0 本、正本言語（`.cljs`/`.cljc`）が 4 本。移行前は 3 対 0
